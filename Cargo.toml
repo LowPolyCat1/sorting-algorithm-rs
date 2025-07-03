@@ -1,0 +1,29 @@
+[package]
+name = "sorting_algorithm_visualizer_rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["lowpolycat1"]
+description = "A simple Sorting Algorithm Visualizer written in rust"
+license = "MIT"
+repository = "https://github.com/lowpolycat1/sorting_algorithm_visualizer_rs"
+
+[dependencies]
+tracing = "*"
+tracing-subscriber = "*"
+minifb = "0.28.0"
+rand = "0.9.1"
+rodio = "0.20.1"
+
+[build-dependencies]
+
+
+[dev-dependencies]
+
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+debug = false
+panic = "abort"
+rpath = false
