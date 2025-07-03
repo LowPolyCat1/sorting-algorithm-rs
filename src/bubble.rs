@@ -35,6 +35,10 @@ pub fn bubble_sort_visualized(
 
             // Draw the current state with elements being compared highlighted in red
             draw_bars(array, buffer, Some(j), Some(j + 1), Some(n - i), bar_width);
+            // Perform the comparison and swap if necessary
+            if array[j] > array[j + 1] {
+                array.swap(j, j + 1);
+            }
             // Update the window to show the current frame
             window.update_with_buffer(buffer, WIDTH, HEIGHT).unwrap();
         }
