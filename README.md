@@ -63,21 +63,16 @@ Enable/disable audio feedback during sorting animations.
 **Bar Selection:**
 Configure number of bars (50-400 pixels) to fit your screen resolution.
 
-## Roadmap
+<!--## Contributing
 
-* Add color customization for different sorting stages
-* Implement parallel sorting algorithm support (if possible in Rust)
-* Integrate save/load functionality for serialized data
-
+See [CONTRIBUTING.md](.github/CONTRIBUTING.md) guidelines.
 <!-- ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) guidelines.
 
 ## License
 
-MIT license (see [LICENSE.txt](LICENSE.txt) file).
-
-Contact: [creator@email.com](mailto:creator@email.com) -->
+MIT license (see [LICENSE.txt](LICENSE.txt) file).-->
 
 ## Images
 
