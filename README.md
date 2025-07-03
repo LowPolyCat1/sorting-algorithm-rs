@@ -69,7 +69,7 @@ Configure number of bars (50-400 pixels) to fit your screen resolution.
 * Implement parallel sorting algorithm support (if possible in Rust)
 * Integrate save/load functionality for serialized data
 
-## Contributing
+<!-- ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) guidelines.
 
@@ -77,4 +77,30 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) guidelines.
 
 MIT license (see [LICENSE.txt](LICENSE.txt) file).
 
-Contact: [creator@email.com](mailto:creator@email.com)
+Contact: [creator@email.com](mailto:creator@email.com) -->
+
+## Images
+
+### Bubble Sort
+
+![Bubble Sort](/showcase/bubble)
+
+### Selection Sort
+
+![Selection Sort](/showcase/selection)
+
+### Insertion Sort
+
+![Insertion Sort](/showcase/insertion.png)
+
+### Merge Sort
+
+![Merge Sort](/showcase/merge.png)
+
+### Quick Sort
+
+![Quick Sort](/showcase/quick.png)
+
+### Finished Sorting
+
+![Finished Sorting](/showcase/finished.png)
