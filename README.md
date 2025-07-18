@@ -1,10 +1,10 @@
 # Sorting Algorithm Visualizer
 
-[![License](https://img.shields.io/github/license/lowpolycat1/sorting-algorithm-rs.svg?style=flat-square)](LICENSE.txt)
+[![License](https://img.shields.io/github/license/lowpolycat1/sorting-algorithm-visualization-rs.svg?style=flat-square)](LICENSE.txt)
 &nbsp;
-[![Contributors](https://img.shields.io/github/contributors/lowpolycat1/sorting-algorithm-rs.svg?style=flat-square)](https://GitHub.com/lowpolycat1/sorting-algorithm-rs/graphs/contributors/)
+[![Contributors](https://img.shields.io/github/contributors/lowpolycat1/sorting-algorithm-visualization-rs.svg?style=flat-square)](https://GitHub.com/lowpolycat1/sorting-algorithm-rs/graphs/contributors/)
 &nbsp;
-[![Crate Versions](https://img.shields.io/badge/Crates-Updated-663399.svg?style=flat-square)](https://github.com/lowpolycat1/sorting-algorithm-rs)
+[![Crate Versions](https://img.shields.io/badge/Crates-Updated-663399.svg?style=flat-square)](https://github.com/lowpolycat1/sorting-algorithm-visualization-rs)
 &nbsp;
 [![minifb](https://img.shields.io/crates/v/minifb.svg)](https://crates.io/crates/minifb)
 &nbsp;
