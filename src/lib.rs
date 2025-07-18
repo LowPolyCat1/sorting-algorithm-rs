@@ -16,14 +16,14 @@ const HEIGHT: usize = 1080;
 
 // Function to draw the bars on the pixel buffer
 // array: The current state of the array to visualize
-// buffer: The pixel buffer (Vec<u32>) where pixels are drawn
+// buffer: The pixel buffer ([u32]) where pixels are drawn
 // highlight_idx1: Optional index of the first bar to highlight (e.g., during comparison)
 // highlight_idx2: Optional index of the second bar to highlight (e.g., during comparison or swap)
 // sorted_until_idx: Index up to which elements are considered sorted (e.g., for Bubble Sort, the end of the sorted portion)
 // bar_width: The calculated width of each bar
 pub fn draw_bars(
     array: &[u32],
-    buffer: &mut Vec<u32>,
+    buffer: &mut [u32],
     highlight_idx1: Option<usize>,
     highlight_idx2: Option<usize>,
     sorted_until_idx: Option<usize>,

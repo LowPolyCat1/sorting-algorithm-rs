@@ -15,9 +15,9 @@ const HEIGHT: usize = 1080;
 // bar_width: The calculated width of each bar
 // num_bars: The total number of bars
 pub fn bubble_sort_visualized(
-    array: &mut Vec<u32>,
+    array: &mut [u32],
     window: &mut Window,
-    buffer: &mut Vec<u32>,
+    buffer: &mut [u32],
     sink: &Sink,
     use_sound: bool,
     bar_width: usize,

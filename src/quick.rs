@@ -7,12 +7,13 @@ const WIDTH: usize = 1920;
 const HEIGHT: usize = 1080;
 
 // Helper function for Quick Sort partitioning
+#[allow(clippy::too_many_arguments)]
 fn partition(
-    array: &mut Vec<u32>,
+    array: &mut [u32],
     low: usize,
     high: usize,
     window: &mut Window,
-    buffer: &mut Vec<u32>,
+    buffer: &mut [u32],
     sink: &Sink,
     use_sound: bool,
     bar_width: usize,
@@ -56,12 +57,13 @@ fn partition(
 }
 
 // Recursive function for Quick Sort visualization
+#[allow(clippy::too_many_arguments)]
 fn quick_sort_recursive(
-    array: &mut Vec<u32>,
+    array: &mut [u32],
     low: usize,
     high: usize,
     window: &mut Window,
-    buffer: &mut Vec<u32>,
+    buffer: &mut [u32],
     sink: &Sink,
     use_sound: bool,
     bar_width: usize,
@@ -111,9 +113,9 @@ fn quick_sort_recursive(
 
 // Wrapper for Quick Sort visualization
 pub fn quick_sort_visualized(
-    array: &mut Vec<u32>,
+    array: &mut [u32],
     window: &mut Window,
-    buffer: &mut Vec<u32>,
+    buffer: &mut [u32],
     sink: &Sink,
     use_sound: bool,
     bar_width: usize,

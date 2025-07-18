@@ -6,13 +6,14 @@ use rodio::Sink;
 const WIDTH: usize = 1920;
 const HEIGHT: usize = 1080;
 
+#[allow(clippy::too_many_arguments)]
 pub fn merge(
-    array: &mut Vec<u32>,
+    array: &mut [u32],
     left: usize,
     mid: usize,
     right: usize,
     window: &mut Window,
-    buffer: &mut Vec<u32>,
+    buffer: &mut [u32],
     sink: &Sink,
     use_sound: bool,
     bar_width: usize,
@@ -26,9 +27,7 @@ pub fn merge(
     #[allow(non_snake_case)]
     let mut R = vec![0; n2];
 
-    for i in 0..n1 {
-        L[i] = array[left + i];
-    }
+    L[..n1].copy_from_slice(&array[left..left + n1]);
     for j in 0..n2 {
         R[j] = array[mid + 1 + j];
     }
@@ -86,12 +85,13 @@ pub fn merge(
 // Helper function for Merge Sort
 
 // Recursive function for Merge Sort visualization
+#[allow(clippy::too_many_arguments)]
 pub fn merge_sort_recursive(
-    array: &mut Vec<u32>,
+    array: &mut [u32],
     left: usize,
     right: usize,
     window: &mut Window,
-    buffer: &mut Vec<u32>,
+    buffer: &mut [u32],
     sink: &Sink,
     use_sound: bool,
     bar_width: usize,
@@ -125,9 +125,9 @@ pub fn merge_sort_recursive(
 
 // Wrapper for Merge Sort visualization
 pub fn merge_sort_visualized(
-    array: &mut Vec<u32>,
+    array: &mut [u32],
     window: &mut Window,
-    buffer: &mut Vec<u32>,
+    buffer: &mut [u32],
     sink: &Sink,
     use_sound: bool,
     bar_width: usize,
